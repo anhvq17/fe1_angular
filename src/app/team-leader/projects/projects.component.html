@@ -1,0 +1,52 @@
+<div>
+    <nz-row align="middle" justify="space-between" style="margin-bottom: 16px;">
+        <nz-col>
+            <h1 style="margin-right: 759px">Projects</h1>
+        </nz-col>
+        <nz-col>
+            <button nz-button 
+                nzType="default" 
+                [nzSize]="size" 
+                nzShape="round"
+                [routerLink]="['add-project']"
+                style="background-color: #0096ff; color: white; margin-top: 14px">Thêm</button>
+        </nz-col>
+    </nz-row>
+
+    <nz-table #basicTable [nzData]="listProjects">
+        <thead>
+            <tr>
+                <th nzWidth="15%">Project ID</th>
+                <th nzWidth="30%">Project Name</th>
+                <th nzWidth="20%">Date of Start</th>
+                <th nzWidth="15%">Team Size</th>
+                <th nzWidth="25%">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(data of basicTable.data;track data.id) {
+                <tr>
+                    <td>{{ data.id }}</td>
+                    <td>{{ data.name }}</td>
+                    <td>{{ data.date }}</td>
+                    <td>{{ data.size }}</td>
+                    <td>                  
+                        <button nz-button
+                        nzType="default"
+                        [nzSize]="size"
+                        nzShape="round"
+                        [routerLink]="['edit-project', data.id]"
+                        style="background-color: #03ac13; color: white; margin-right: 2px;">Sửa</button>
+                    
+                        <button nz-button
+                        nzType="default"
+                        [nzSize]="size"
+                        nzShape="round"
+                        (click)="onDelete(data.id)"
+                        style="background-color: #ec2d1d; color: white;">Xoá</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </nz-table>
+</div>

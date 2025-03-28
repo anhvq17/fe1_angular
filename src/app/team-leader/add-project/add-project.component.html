@@ -1,0 +1,50 @@
+<nz-card nzTitle="New Project">
+    <form #create="ngForm" (ngSubmit)="onCreate(create.value)" nz-form>
+      <nz-form-item>
+        <nz-form-label [nzSpan]="5">Product ID</nz-form-label>
+        <nz-form-control [nzSpan]="18">
+          <input type="text" name="id" nz-input ngModel required />
+        </nz-form-control>
+      </nz-form-item>
+  
+      <nz-form-item>
+        <nz-form-label [nzSpan]="5">Product Name</nz-form-label>
+        <nz-form-control [nzSpan]="18">
+          <input type="text" name="name" nz-input ngModel required />
+        </nz-form-control>
+      </nz-form-item>
+  
+      <nz-form-item>
+        <nz-form-label [nzSpan]="5">Date of Start</nz-form-label>
+        <nz-form-control [nzSpan]="18">
+          <input type="date" name="date" nz-input ngModel required />
+        </nz-form-control>
+      </nz-form-item>
+  
+      <nz-form-item>
+        <nz-form-label [nzSpan]="5">Team Size</nz-form-label>
+        <nz-form-control [nzSpan]="18">
+          <input type="number" name="size" nz-input ngModel required />
+        </nz-form-control>
+      </nz-form-item>
+  
+      <nz-form-item>
+        <nz-form-control [nzSpan]="24">
+          <div style="display: flex; justify-content: center; gap: 6px; margin-top: 6px;">
+            <button nz-button 
+              nzType="default"
+              nzShape="round"
+              style="background-color: #0096ff; color: white;"
+              type="button"
+              (click)="onCancel()">Cancel</button>
+      
+            <button nz-button 
+              nzType="default"
+              nzShape="round"
+              style="background-color: #0096ff; color: white;"
+              type="submit">Save</button>
+          </div>
+        </nz-form-control>
+      </nz-form-item>
+    </form>
+</nz-card>

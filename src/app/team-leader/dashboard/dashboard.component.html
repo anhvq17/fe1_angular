@@ -1,0 +1,45 @@
+<div>
+    <h1>Dashboard</h1>
+    <nz-row [nzGutter]="16">
+        <nz-col [nzSpan]="6">
+            <nz-card nzTitle="Số lượng thành viên">
+                <p>{{ totalMembers }}</p>
+            </nz-card>
+        </nz-col>
+        <nz-col [nzSpan]="6">
+            <nz-card nzTitle="Tổng chi phí dự án">
+                <p>{{ totalCost | currency:'USD' }}</p>
+            </nz-card>
+        </nz-col>
+        <nz-col [nzSpan]="6">
+            <nz-card nzTitle="Task đang xử lý">
+                <p>{{ totalTasks }}</p>
+            </nz-card>
+        </nz-col>
+        <nz-col [nzSpan]="6">
+            <nz-card nzTitle="Dự án sắp triển khai">
+                <p>{{ upcomingProjects }}</p>
+            </nz-card>
+        </nz-col>
+    </nz-row>
+
+    <nz-card nzTitle="Tổng quan về dự án" style="margin-top: 20px;">
+        <nz-row [nzGutter]="16">
+            <nz-col [nzSpan]="8">
+                <nz-card nzTitle="Tổng chi phí dự án">
+                    <p>{{ totalCost | currency:'USD' }}</p>
+                </nz-card>
+            </nz-col>
+            <nz-col [nzSpan]="8">
+                <nz-card nzTitle="Hiện tại đã chi">
+                    <p>{{ spentCost | currency:'USD' }}</p>
+                </nz-card>
+            </nz-col>
+            <nz-col [nzSpan]="8">
+                <nz-card nzTitle="Còn lại">
+                    <p>{{ remainingCost | currency:'USD' }}</p>
+                </nz-card>
+            </nz-col>
+        </nz-row>
+    </nz-card>    
+</div>

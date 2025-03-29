@@ -1,18 +1,6 @@
 {
   "projects": [
     {
-      "id": "5",
-      "name": "Project 5",
-      "date": "2025-03-05",
-      "size": 15
-    },
-    {
-      "id": "6",
-      "name": "Project 6",
-      "date": "2025-03-06",
-      "size": 16
-    },
-    {
       "id": "7",
       "name": "Project 7 update",
       "date": "2025-03-17",

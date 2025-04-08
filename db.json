@@ -18,6 +18,11 @@
       "id": "3efe",
       "email": "test1@gmail.com",
       "password": "123456"
+    },
+    {
+      "id": "20bb",
+      "email": "test2@gmail.com",
+      "password": "123456"
     }
   ]
 }

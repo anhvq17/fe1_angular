@@ -6,5 +6,5 @@ export const routes: Routes = [
   { path: 'projects', loadChildren: () => import('./team-leader/projects/projects.routes').then(m => m.PROJECTS_ROUTES) },
   { path: 'add-task', loadChildren: () => import('./employee/add-task/add-task.routes').then(m => m.ADDTASK_ROUTES) },
   { path: 'register', loadChildren: () => import('./register/register.routes').then(m => m.REGISTER_ROUTES) },
-  { path: 'login', loadChildren: () => import('./register/register.routes').then(m => m.REGISTER_ROUTES) },
+  { path: 'login', loadChildren: () => import('./login/login.routes').then(m => m.LOGIN_ROUTES) },
 ];

@@ -12,5 +12,12 @@
       "date": "2025-03-08",
       "size": 18
     }
+  ],
+  "users": [
+    {
+      "id": "3efe",
+      "email": "test1@gmail.com",
+      "password": "123456"
+    }
   ]
 }

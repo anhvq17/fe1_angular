@@ -28,7 +28,7 @@ export class LoginComponent {
       localStorage.setItem('token', token);
       if (res) {
         alert("Đăng nhập thành công!");
-        this.router.navigate([''])
+        this.router.navigate(['/projects'])
       }
     })
   }

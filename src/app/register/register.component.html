@@ -1,14 +1,38 @@
-<div class="container">
-    <h1>Register</h1>
+<nz-card nzTitle="Register Form" style="max-width: 400px; margin: auto;">
     <form #register="ngForm" (ngSubmit)="onRegister(register.value)">
-        <div>
-            <label class="form-label">Email:</label>
-            <input type="text" name="email" class="form-control" ngModel>
-        </div>
-        <div>
-            <label class="form-label">Password:</label>
-            <input type="password" name="password" class="form-control" ngModel>
-        </div>
-        <button class="btn btn-primary" type="submit">Submit</button>
+      <nz-form-item>
+        <nz-form-label [nzSpan]="6" nzRequired>Email</nz-form-label>
+        <nz-form-control [nzSpan]="18">
+          <input
+            nz-input
+            type="email"
+            name="email"
+            [(ngModel)]="email"
+            required
+            email
+            placeholder="Enter your email"
+          />
+        </nz-form-control>
+      </nz-form-item>
+  
+      <nz-form-item>
+        <nz-form-label [nzSpan]="6" nzRequired>Password</nz-form-label>
+        <nz-form-control [nzSpan]="18">
+          <input
+            nz-input
+            type="password"
+            name="password"
+            [(ngModel)]="password"
+            required
+            placeholder="Enter your password"
+          />
+        </nz-form-control>
+      </nz-form-item>
+  
+      <nz-form-item>
+        <nz-form-control [nzSpan]="24" class="text-center">
+          <button nz-button nzType="default"  nzShape="round" style="background-color: #0096ff; color: white;" type="submit">Submit</button>
+        </nz-form-control>
+      </nz-form-item>
     </form>
-</div>
+</nz-card>

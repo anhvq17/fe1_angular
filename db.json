@@ -15,14 +15,9 @@
   ],
   "users": [
     {
-      "id": "3efe",
-      "email": "test1@gmail.com",
-      "password": "123456"
-    },
-    {
-      "id": "20bb",
-      "email": "test2@gmail.com",
-      "password": "123456"
+      "email": "test3@gmail.com",
+      "password": "$2a$10$gYcjsw7G85AOYGhBpQMy3euJOzFipoRn8QYZT51otF/wksszIfdpO",
+      "id": "xP5AEFG"
     }
   ]
 }

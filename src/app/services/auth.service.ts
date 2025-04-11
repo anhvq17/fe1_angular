@@ -10,13 +10,13 @@ export class AuthService {
 
   apiUrl:string = `http://localhost:3000`
 
-  // Đăng ký
-  register(data:any):Observable<object> {
+  // Khai báo hàm đăng ký
+  register(data:any): Observable<object> {
     return this.api.post(this.apiUrl + `/register`, data);
   }
 
-  // Đăng nhập
-  login(data:any):Observable<object> {
+  // Khai báo hàm đăng nhập
+  login(data:any): Observable<object> {
     return this.api.post(this.apiUrl + `/login`, data);
   }
 }

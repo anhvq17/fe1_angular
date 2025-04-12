@@ -41,6 +41,11 @@
       "email": "test4@gmail.com",
       "password": "$2a$10$EbW2oBhsPp.pJkKIYGX7ROQnURcoNdrrq/OpME7V/JAUqtUc8Nz66",
       "id": "vf0lYip"
+    },
+    {
+      "email": "test5@gmail.com",
+      "password": "$2a$10$0FaIxNdY0cJmSU.sK2/nmOvJYtrYC.7E4/TzUJ.CgmniWQfv8Mroa",
+      "id": "0ZDcRnb"
     }
   ]
 }
